@@ -1,0 +1,14 @@
+load("@rules_python//python:defs.bzl", "py_library")
+
+py_library(
+    name = "example",
+    srcs = [
+        "__init__.py",
+        "example.py",
+    ],
+    visibility = ["//:__subpackages__"],
+    deps = [
+        "@pip//betterproto",
+        "@pip//grpclib",
+    ],
+)

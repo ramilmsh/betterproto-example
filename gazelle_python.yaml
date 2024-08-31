@@ -1,0 +1,29 @@
+# GENERATED FILE - DO NOT EDIT!
+#
+# To update this file, run:
+#   bazel run //:gazelle_python_manifest.update
+
+manifest:
+  modules_mapping:
+    30fcd23745efe32ce681__mypyc: black
+    betterproto: betterproto
+    black: black
+    blackd: black
+    blib2to3: black
+    click: click
+    google.protobuf: protobuf
+    grpclib: grpclib
+    h2: h2
+    hpack: hpack
+    hyperframe: hyperframe
+    jinja2: jinja2
+    markupsafe: MarkupSafe
+    multidict: multidict
+    mypy_extensions: mypy_extensions
+    packaging: packaging
+    pathspec: pathspec
+    platformdirs: platformdirs
+    stringcase: stringcase
+  pip_repository:
+    name: pip
+integrity: 0e46561a2611262bb62f05e0de5713939b823050f6ad1c01032b9989c48445f8

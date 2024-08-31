@@ -1,0 +1,20 @@
+load("@aspect_bazel_lib//lib:write_source_files.bzl", "write_source_file")
+load("@rules_proto//proto:defs.bzl", "proto_library")
+load("//betterproto:defs.bzl", "betterproto_compile")
+
+proto_library(
+    name = "example_proto",
+    srcs = ["service.proto"],
+)
+
+betterproto_compile(
+    name = "example",
+    protos = [":example_proto"],
+)
+
+write_source_file(
+    name = "proto_link",
+    diff_test = False,
+    in_file = ":example",
+    out_file = "example",
+)
